@@ -1,0 +1,32 @@
+<?php
+
+# Si tiene problemas para conectarse a la base de datos MySQL y todas las variables a continuación son correctas
+# intente cambiar la variable 'db_server' de localhost a 127.0.0.1. Soluciona un problema debido a los sockets.
+
+
+
+# Database management system to use
+$DBMS = 'MySQL';
+
+# Database variables
+# ADVERTENCIA: La base de datos especificada en db_database SERÁ ELIMINADA POR COMPLETO durante la configuración.
+# Utilice una base de datos dedicada a PVWA.
+#
+# Si está utilizando MariaDB, no puede usar la raíz, debe crear un usuario PVWA dedicado.
+# Consulte README.md para obtener más información al respecto.
+$_PVWA = array();
+$_PVWA[ 'db_server' ]   = '127.0.0.1';
+$_PVWA[ 'db_database' ] = 'pvwa';
+$_PVWA[ 'db_user' ]     = 'root';
+$_PVWA[ 'db_password' ] = '';
+$_PVWA[ 'db_port'] = '3306';
+
+
+# Nivel de seguridad predeterminado
+# Valor predeterminado para el nivel de seguridad con cada sesión.
+# El valor predeterminado es 'bajo'. Es posible que desee establecer esto en 'bajo', 'medio'o 'alto'.
+$_PVWA[ 'default_security_level' ] = 'bajo';
+
+
+
+?>
